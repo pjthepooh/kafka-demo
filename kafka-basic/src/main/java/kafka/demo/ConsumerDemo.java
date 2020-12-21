@@ -1,4 +1,4 @@
-package com.kafka.demo;
+package kafka.demo;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -12,13 +12,13 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
 
-public class ConsumerDemoGroups {
+public class ConsumerDemo {
 
     public static void main(String[] args) {
-        Logger logger = LoggerFactory.getLogger(ConsumerDemoGroups.class.getName());
+        Logger logger = LoggerFactory.getLogger(ConsumerDemo.class.getName());
 
         String bootstrapServers = "127.0.01:9092";
-        String groupId = "my-fifth-app";
+        String groupId = "my-fourth-app";
         String topic = "first_topic";
 
         // create consumer configs
